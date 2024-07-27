@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.career-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 0 20px;
+}
+
+.career-text h2 {
+    margin: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.career-text {
+    flex: 1;
+    font-size: 1.1em;
+    margin-right: 0;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.career-text p {
+    font-size: 20px;
+    margin: 10px;
+}
+
+.career-image img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.career-new {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.career-new:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.career-new img {
+    width: 120px; /* Increased size */
+    height: auto;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.career-new img:hover {
+    transform: scale(1.1);
+}
+
+.career-new h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.3em; /* Smaller size */
+}
+
+.career-new .job-opening {
+    margin-bottom: 20px;
+}
+
+.career-new h4 {
+    margin-top: 20px;
+    font-size: 1.1em; /* Smaller size */
+    color: #333;
+}
+
+.career-new ul {
+    list-style: none;
+    padding: 0;
+}
+
+.career-new ul li {
+    font-size: 0.9em; /* Smaller size */
+    line-height: 1.5;
+}
+
+.send-cv-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.send-cv-button:hover {
+    background-color: #0056b3;
+}
+
+.why-work-with-us {
+    background-color: #f5f8fc;
+    padding: 30px 10px;
+    text-align: center;
+}
+
+.why-work-with-us h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.why-work-with-us p {
+    margin-bottom: 40px;
+    font-size: 16px;
+    color: #555;
+}
+
+.why-work-cards-container {
+    padding: 0 20px;
+    background-color: #89bafa;
+    margin-top: -30px;
+}
+
+.why-work-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.why-work-card {
+    width: 100%;
+    margin: 10px 0;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.why-work-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.why-work-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.why-work-card h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.why-work-card p {
+    font-size: 14px;
+    color: #777;
+}
+
+.contact-container {
+    text-align: center;
+    margin-top: 40px;
+    padding: 0 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.contact-input,
+.contact-textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-button:hover {
+    background-color: #0056b3;
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 600px) {
+    .career-content {
+        flex-direction: row;
+    }
+
+    .career-text {
+        margin-right: 20px;
+        text-align: left;
+    }
+
+    .career-image img {
+        margin-top: 0;
+    }
+
+    .why-work-cards {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .why-work-card {
+        flex: 1;
+        margin: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .why-work-with-us h2 {
+        font-size: 28px;
+    }
+
+    .why-work-with-us p {
+        font-size: 18px;
+    }
+
+    .why-work-card h3 {
+        font-size: 20px;
+    }
+
+    .why-work-card p {
+        font-size: 16px;
+    }
+
+    .contact-input,
+    .contact-textarea {
+        max-width: 600px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .career-text {
+        font-size: 1.3em;
+    }
+
+    .contact-input,
+    .contact-textarea {
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 599px) {
+    .career-text {
+        font-size: 0.9em;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .career-image img {
+        margin-top: 20px;
+    }
+
+    .why-work-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}

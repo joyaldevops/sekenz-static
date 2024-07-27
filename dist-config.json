@@ -1,0 +1,38 @@
+"DefaultCacheBehavior": {
+  "TargetOriginId": "S3-sekenz",
+  "ViewerProtocolPolicy": "redirect-to-https",
+  "MinTTL": 0,
+  "AllowedMethods": {
+    "Quantity": 2,
+    "Items": ["HEAD", "GET"],
+    "CachedMethods": {
+      "Quantity": 2,
+      "Items": ["HEAD", "GET"]
+    }
+  },
+  "SmoothStreaming": false,
+  "DefaultTTL": 86400,
+  "MaxTTL": 31536000,
+  "Compress": true,
+  "LambdaFunctionAssociations": {
+    "Quantity": 0,
+    "Items": []
+  },
+  "FunctionAssociations": {
+    "Quantity": 0,
+    "Items": []
+  },
+  "ForwardedValues": {
+    "QueryString": false,
+    "Cookies": {
+      "Forward": "none"
+    },
+    "Headers": {
+      "Quantity": 0
+    },
+    "QueryStringCacheKeys": {
+      "Quantity": 0
+    }
+  },
+  "FieldLevelEncryptionId": ""
+}

@@ -1,0 +1,286 @@
+/* Global styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.about-container {
+  font-family: Arial, sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  padding-top: 2cm;
+}
+
+/* About and Approach sections */
+.about-section, .approach-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 5%;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+
+.about-section {
+  background-color: #ffffff;
+}
+
+.approach-section {
+  background-color: #f0f8ff;
+}
+
+.about-content, .approach-content {
+  width: 100%;
+  max-width: 50%;
+  letter-spacing: .3em;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.about-content h1, .why-sekenz-group h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.about-content p, .approach-content p {
+  font-size: 1.4em;
+  line-height: 1.7;
+  color: #606060;
+  letter-spacing: 0.1em;
+}
+
+.about-us-image, .approach-us-image {
+  width: 100%;
+  max-width: 40%;
+  height: auto;
+}
+
+/* Dark blue background */
+.dark-blue-background {
+  background: linear-gradient(to bottom, #0a1930, #000);
+  padding: 50px 5%;
+  text-align: center;
+  color: white;
+  font-size: 2.5em;
+  font-family: Arial, sans-serif;
+  letter-spacing: 0.1em;
+  line-height: 1.7;
+  font-weight: 500;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Why Sekenz Group */
+.why-sekenz-group {
+  padding: 50px 5%;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.content-image {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.why-sekenz-main-image {
+  width: 100%;
+  max-width: 45%;
+  height: auto;
+}
+
+.features {
+  width: 100%;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.feature {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.feature-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.feature-header img {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.feature-header h3 {
+  margin: 0;
+  font-size: 1.4em;
+}
+
+.feature p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  color: #333;
+  font-family: Arial, sans-serif;
+  letter-spacing: 0.1em;
+  margin-left: 65px;
+}
+
+.team-section {
+  padding: 2rem;
+  background-color: #f5f5f5;
+}
+
+.team-members {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  width: 250px;
+  max-width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: scale(1.05);
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 1rem;
+}
+
+.team-member h3 {
+  margin: 0.5rem 0 0.2rem;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.team-member p {
+  margin: 0;
+  color: #666;
+}
+
+/* Contact section */
+.contact-container {
+  width: 100%;
+  padding: 50px 5%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-input, .contact-textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.contact-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0a1930;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .about-content h1, .why-sekenz-group h2, .dark-blue-background {
+    font-size: 2em;
+  }
+  
+  .about-content p, .approach-content p, .feature p {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-section, .approach-section, .content-image {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .about-content, .approach-content, .features, .why-sekenz-main-image {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  .about-us-image, .approach-us-image {
+    width: 80%;
+    margin-top: 30px;
+  }
+  
+  .team-members {
+    flex-direction: column;
+    gap: 50px;
+  }
+  
+  .dark-blue-background {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-content h1, .why-sekenz-group h2 {
+    font-size: 1.8em;
+  }
+  
+  .about-content p, .approach-content p, .feature p {
+    font-size: 1em;
+  }
+  
+  .feature-header img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .feature-header h3 {
+    font-size: 1.2em;
+  }
+  
+  .team-member .avatar {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .dark-blue-background {
+    font-size: 1.2em;
+  }
+}

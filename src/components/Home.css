@@ -1,0 +1,538 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  border: 2px solid #007BFF; 
+  padding: 20px; 
+  border-radius: 5px; 
+}
+
+/* Home Section */
+.home-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: #ffffff;
+}
+
+.home-content {
+  margin-left: 60px;
+  max-width: 50%;
+  letter-spacing: .3em;
+}
+
+.home-content h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.home-content p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.home-content button {
+  padding: 10px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #013d7cd5;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  transition: background-color 0.3s;
+}
+
+.join-btn {
+  width: auto;
+  padding: 10px;
+}
+
+.home-gif {
+  max-width: 40%;
+  border-bottom: 2px solid #0056b3;
+}
+
+/* Container */
+.container-ethics {
+  background-color: #0c1e33;
+  color: #ffffff;
+  text-align: center;
+  padding: 25px;
+}
+
+.header {
+  font-size: 42px;
+}
+
+.ethics-h1 {
+  color: #0056b3;
+  font-size: 27px;
+}
+
+/* Styling for the blue horizontal line */
+.blue-line {
+  border: none;
+  width: 50%;
+  border-top: 3px solid #007BFF; /* Adjust color and thickness as necessary */
+  margin: 20px auto; /* Space between line and text */
+}
+
+/* Sub-header styling */
+.sub-header {
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #ffffff; /* Assuming white text on a dark background */
+  text-align: center; /* Aligns text to the left */
+  margin-bottom: 20px; /* Space between text and button */
+}
+
+/* Button styling */
+.button {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000; /* Text color */
+  background-color: #ffffff; /* Button background color */
+  border: none;
+  border-radius: 25px; /* Rounded corners */
+  padding: 10px 20px; /* Button padding */
+  cursor: pointer; /* Pointer cursor on hover */
+  display: inline-flex; /* For aligning text and icon */
+  align-items: center; /* Align items in center */
+  text-decoration: none; /* Remove underline from text */
+  outline: none; /* Remove outline */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.button:hover {
+  background-color: #e0e0e0; /* Slightly darker on hover */
+}
+
+.button::after {
+  content: '→';
+  margin-left: 10px; /* Space between text and arrow */
+  font-size: 18px; /* Adjust size of arrow */
+}
+
+/* Services Section */
+.services-section {
+  padding: 60px 20px; 
+  background-color: #f9f9f9;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.services-header {
+  margin-bottom: 30px; 
+}
+
+.services-header h4 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  color:darkblue;
+  font-weight: 600; 
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.services-header h1 {
+  font-size: 2.2rem; /* Increased font size for better readability */
+  color: #333;
+  margin: 0; /* Removed default margin */
+  animation: fadeInUp 0.8s ease-out; /* Apply the fade-in and slide-up animation */
+}
+
+
+.services-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.services-content p {
+  font-size: 1.125rem; /* Adjusted font size */
+  color: #666;
+  margin-bottom: 20px;
+  font-weight: 200;
+  margin-right: 0; /* Centered text, no need for margin-right */
+}
+
+.view-services-button {
+  padding: 14px 28px; /* Adjusted padding for better clickability */
+  background-color: #f8f9fa; /* Background color to match the image */
+  color: #000; /* Text color to match the image */
+  border: 1px solid #ddd; /* Border color to match the image */
+  border-radius: 50px; /* Increased border radius for modern look */
+  text-decoration: none; /* Remove underline from the text */
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 600; /* Slightly bolder text */
+  box-shadow: none; /* No shadow to match the image */
+}
+
+.view-services-button:hover {
+  background-color: #007bff; /* Change background color on hover */
+  color: #fff; /* Change text color on hover */
+  box-shadow: 0 8px 16px rgba(0, 123, 255, 0.3); /* Add shadow on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+
+.view-services-button a {
+  color: inherit; /* Ensure the link inherits the button text color */
+  text-decoration: none; /* Remove underline from the link text */
+}
+
+
+.view-services-button .arrow {
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+  font-size: 1.25rem; /* Size of the arrow to match the image */
+}
+
+.view-services-button:hover .arrow {
+  transform: translateX(5px);
+}
+
+/* Card Styling */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 5px;
+  background-color: #3498db;
+  transition: left 0.3s ease;
+}
+
+.card:hover::before {
+  left: 0;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.icon-container {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #666;
+}
+
+.card:hover .card-title, .card:hover .card-text {
+  transition: color 0.3s ease;
+  color: #3498db;
+}
+
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('/src/Assets/dev.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.services-card {
+  background-color: #fff;
+  border: 2px solid #007bff; /* Blue border */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 370px; /* Set the width of the card */
+  height: 420px; /* Set the height of the card */
+  position: relative;
+  animation: fadeInUp 1s ease-out; /* Animation */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.services-card:hover {
+  transform: translateY(-10px); /* Move up on hover */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.service-logo {
+  max-width: 100px; /* Adjust as needed */
+  margin-bottom: 10px;
+}
+
+.services-card h3 {
+  color: #007bff; /* Matching blue color */
+  margin-bottom: 10px;
+}
+
+.services-card p {
+  color: #333333;
+  line-height: 1.6;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  text-align: left;
+}
+
+.card-title {
+  color: #000000;
+}
+
+.card-text {
+  color: #000000;
+}
+
+.icon-container {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+/* Contact Section */
+.contact-left {
+  padding: 50px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: left;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-left h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contact-left p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #666;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .home-content {
+    max-width: 60%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .home-content {
+    max-width: 70%;
+  }
+
+  .home-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-gif {
+    max-width: 80%;
+    margin-top: 20px;
+  }
+
+  .services-section {
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-content {
+    max-width: 80%;
+    margin-left: 20px;
+  }
+
+  .home-content h1 {
+    font-size: 40px;
+  }
+
+  .home-content p {
+    font-size: 16px;
+  }
+
+  .services-content p {
+    font-size: 0.875rem;
+  }
+
+  .view-services-button {
+    padding: 10px 20px;
+    font-size: 0.875rem;
+  }
+
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ethics-h1, .header {
+    text-align: center;
+  }
+
+  .header {
+    font-size: 36px;
+  }
+
+  .ethics-h1 {
+    font-size: 24px;
+  }
+
+  .blue-line {
+    width: 70%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  .sub-header {
+    font-size: 18px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  .button {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-content h1 {
+    font-size: 30px;
+  }
+
+  .home-content p {
+    font-size: 14px;
+  }
+
+  .services-header h1 {
+    font-size: 2rem;
+  }
+
+  .services-content p {
+    font-size: 0.75rem;
+  }
+
+  .view-services-button {
+    padding: 8px 16px;
+    font-size: 0.75rem;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .ethics-h1, .header {
+    text-align: center;
+  }
+
+  .header {
+    font-size: 32px;
+  }
+
+  .ethics-h1 {
+    font-size: 22px;
+  }
+
+  .blue-line {
+    width: 80%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  .sub-header {
+    font-size: 16px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  .button {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  .contact-left {
+    padding: 20px;
+    margin: 10px auto;
+  }
+
+  .contact-left h1 {
+    font-size: 1.2rem;
+  }
+
+  .contact-left p {
+    font-size: 0.8rem;
+  }
+}

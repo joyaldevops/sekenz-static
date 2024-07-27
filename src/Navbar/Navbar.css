@@ -1,0 +1,153 @@
+/* General Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative; /* Ensure the navbar is positioned relative to its container */
+  z-index: 1000; /* Ensure the navbar is always on top */
+}
+
+.logo-container {
+  flex: 1; /* Flex to take remaining space */
+}
+
+.logo {
+  width: 100px; /* Adjust logo size as needed */
+  height: 100px;
+  margin-left: 10px;
+  margin-top: 6px;
+}
+
+.call-button {
+  display: inline-block;
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: center; /* Center the nav links */
+  align-items: center;
+  font-size: 11px;
+  font-weight: 500;
+  margin: 0; /* Remove margin to center links */
+  flex: 2; /* Flex to take remaining space */
+}
+
+.nav-links li {
+  margin-left: 50px; /* Space between links */
+  position: relative; /* For underline effect */
+  transition: transform 0.3s, color 0.3s; /* Transition for hover effects */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 1.2em;
+  transition: color 0.3s, transform 0.3s; /* Transition for hover effects */
+}
+
+.nav-links li:hover {
+  transform: translateY(-3px); /* Floating animation for li */
+  color: #007bff; /* Change text color on hover */
+}
+
+.nav-links a:hover {
+  color: #007bff; /* Change link color on hover */
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #007bff;
+  bottom: -5px;
+  left: 0;
+  transition: width 0.3s ease-in-out; /* Underline animation */
+}
+
+.nav-links a:hover::after {
+  width: 100%; /* Expand underline on hover */
+}
+
+.toggle-button {
+  display: none; /* Initially hide the toggle button */
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .nav-links {
+    flex: 3; /* Adjust flex for larger screens */
+  }
+
+  .nav-links li {
+    margin-left: 40px; /* Adjust space between links */
+  }
+}
+
+@media (max-width: 768px) {
+  .toggle-button {
+    display: block; /* Display the toggle button on smaller screens */
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 80%;
+    flex-direction: column;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease;
+    justify-content: center; /* Center the nav links in mobile view */
+    align-items: center; /* Center the nav links in mobile view */
+    z-index: 999; /* Ensure the nav links are above other content */
+  }
+
+  .nav-links.open {
+    right: 0; /* Show the nav links when open class is applied */
+  }
+
+  .nav-links li {
+    margin-left: 0; /* Adjust margin for mobile layout */
+    margin-top: 20px; /* Add space between links */
+    transition: transform 0.3s, color 0.3s; /* Transition for hover effects */
+  }
+
+  .nav-links a {
+    font-size: 1.5em; /* Increase font size for better readability on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-links a {
+    font-size: 1.3em; /* Adjust font size for very small screens */
+  }
+
+  .nav-links li {
+    margin-top: 15px; /* Adjust space between links for very small screens */
+  }
+
+  .logo {
+    max-width: 150px; /* Adjust logo size for very small screens */
+    height: 80px;
+  }
+}
